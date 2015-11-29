@@ -4,10 +4,12 @@ Steps :
 
 1. `git clone https://github.com/dhruvvyas90/rpi-rtl8188cus-hotspot.git`
 2. `cd rpi-rtl8188cus`
-3. Edit ssid and wpa_passphrase by editing `nano hostapd.conf` and editing corresponding lines.
+3. Edit ssid and wpa_passphrase by editing `nano hostapd.conf` and edit corresponding lines.
 4. `sudo ./install_dep.sh`
 5. Now that everything is in place, run `sudo ./start_hotspot.sh`
-6. To make it permanent, add it to `/etc/rc.local` 
+6. To make it permanent, add it to `/etc/rc.local`
+
+Make sure you comment out entries containing wireless interface you intend to use in `/etc/network/interfaces`
 
 References :
 
